@@ -1,4 +1,4 @@
-# Git Configuration Guide (Windows PowerShell)
+# Git Configuration & First Push Guide (Windows PowerShell)
 
 ## 1. Check Git Version
 ```powershell
@@ -35,3 +35,50 @@ git config --list
 ```powershell
 notepad $env:USERPROFILE\.gitconfig
 ```
+
+---
+
+## 7. Initialize a Local Git Repository
+
+```powershell
+git init
+```
+
+## 8. Add Files to Staging
+
+```powershell
+git add .
+```
+
+## 9. Commit Changes
+
+```powershell
+git commit -m "first commit"
+```
+
+## 10. Rename Branch to `main` (GitHub default)
+
+```powershell
+git branch -M main
+```
+
+## 11. Add GitHub Remote
+
+```powershell
+git remote add origin https://github.com/<YourUsername>/<RepoName>.git
+```
+
+## 12. Authenticate with GitHub (Browser Login)
+
+If prompted, log in via browser and authorize Git.
+
+---
+
+## 13. Push Code to GitHub
+
+```powershell
+git push -u origin main
+```
+
+✅ Your code is now uploaded to GitHub.
+
